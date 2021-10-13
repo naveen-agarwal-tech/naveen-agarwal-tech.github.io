@@ -14,6 +14,11 @@ module.exports = merge(common, {
       template: "./src/template.html",
       favicon: "./src/assets/favicon.png",
     }),
+    new HtmlWebpackPlugin({
+      filename:"promo.html",
+      template: "./src/promo.html",
+      favicon: "./src/assets/favicon.png",
+    })
   ],
   module: {
     rules: [
@@ -24,6 +29,7 @@ module.exports = merge(common, {
           "css-loader", //2. Turns css into commonjs
           "sass-loader", //1. Turns sass into css
         ],
+      
       },
     ],
   },
