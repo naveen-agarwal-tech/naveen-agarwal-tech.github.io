@@ -18,6 +18,21 @@ module.exports = merge(common, {
       filename:"promo.html",
       template: "./src/promo.html",
       favicon: "./src/assets/favicon.png",
+    }),
+    new HtmlWebpackPlugin({
+      filename:"vlog.html",
+      template: "./src/vlog.html",
+      favicon: "./src/assets/favicon.png",
+    }),
+    new HtmlWebpackPlugin({
+      filename:"games.html",
+      template: "./src/games.html",
+      favicon: "./src/assets/favicon.png",
+    }),
+    new HtmlWebpackPlugin({
+      filename:"montage.html",
+      template: "./src/montage.html",
+      favicon: "./src/assets/favicon.png",
     })
   ],
   module: {

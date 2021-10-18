@@ -36,6 +36,36 @@ module.exports = merge(common, {
           removeComments: true,
         },
       }),
+      new HtmlWebpackPlugin({
+        filename:"vlog.html",
+        template: "./src/vlog.html",
+        favicon: "./src/assets/favicon.png",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
+      new HtmlWebpackPlugin({
+        filename:"games.html",
+        template: "./src/games.html",
+        favicon: "./src/assets/favicon.png",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
+      new HtmlWebpackPlugin({
+        filename:"montage.html",
+        template: "./src/montage.html",
+        favicon: "./src/assets/favicon.png",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
     ],
   },
   plugins: [
